@@ -1,0 +1,17 @@
+digraph G {
+MI_treatment [style=filled];
+p_treatment [shape=invtriangle];
+p_treatment -> MI_treatment  [label=p];
+mu;
+mu -> p_treatment  [label=m];
+population_mean;
+population_mean -> mu  [label=mu];
+population_tau;
+population_tau -> mu  [label=tau];
+delta;
+delta -> p_treatment  [label=d];
+MI_control [style=filled];
+p_control [shape=invtriangle];
+p_control -> MI_control  [label=p];
+mu -> p_control  [label=ltheta];
+}
